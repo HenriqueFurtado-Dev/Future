@@ -44,6 +44,7 @@ body {
   font-weight: 400;
   width: 300px;
   background-color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 .container {
@@ -71,9 +72,18 @@ header .container .logo {
 header .container nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
-header .container nav ul a {
+header .container nav ul li:last-child {
+  background-color: #00CED4;
+  padding: 10px 30px;
+  transition: all 0.5s ease;
+}
+header .container nav ul li:last-child:hover {
+  border-radius: 25px;
+}
+header .container nav ul li a {
   text-decoration: none;
   color: black;
 }
@@ -255,11 +265,192 @@ header .container nav ul a {
   justify-content: center;
   border-radius: 50%;
   font-size: 44px;
+  color: white;
   background-color: #00CED4;
 }
 .icons .container .icon-box h3 {
   margin-top: 30px;
   font-size: 30px;
+}
+
+.news {
+  width: 100vw;
+  position: relative;
+  padding: 60px 0;
+}
+.news .circle2 {
+  width: 220px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  right: 0;
+}
+.news .circle3 {
+  width: 200px;
+  position: absolute;
+  bottom: -250px;
+  z-index: 0;
+  left: 0;
+}
+.news .container {
+  display: flex;
+}
+.news .container div {
+  width: 50%;
+  z-index: 2;
+}
+.news .container .news-img {
+  position: relative;
+}
+.news .container .news-img .robot2 {
+  width: 400px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+.news .container .news-img .bg-blue {
+  width: 500px;
+  border-radius: 50%;
+}
+.news .container .news-content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 90px;
+}
+.news .container .news-content h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+.news .container .news-content h2 {
+  font-size: 44px;
+}
+.news .container .news-content p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.news .container .news-content button {
+  width: 300px;
+}
+
+.news-tech {
+  width: 100vw;
+  padding-top: 60px;
+  padding-bottom: 220px;
+}
+.news-tech .container {
+  display: flex;
+}
+.news-tech .container div {
+  width: 50%;
+  z-index: 2;
+}
+.news-tech .container .news-tech-content {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 90px;
+}
+.news-tech .container .news-tech-content h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+.news-tech .container .news-tech-content h2 {
+  font-size: 44px;
+}
+.news-tech .container .news-tech-content p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.news-tech .container .news-tech-content button {
+  width: 300px;
+}
+.news-tech .container .news-tech-img {
+  position: relative;
+}
+.news-tech .container .news-tech-img .robot3 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+.news-tech .container .news-tech-img .circle-yellow {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+}
+
+.services {
+  width: 100vw;
+  background-color: #00CED4;
+  padding: 60px 0;
+}
+.services .container {
+  display: flex;
+  gap: 30px;
+  color: white;
+}
+.services .container .services-box {
+  max-width: 20%;
+}
+.services .container .services-box h3 {
+  font-size: 22px;
+}
+.services .container .services-box p {
+  margin-top: 5px;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.pre-footer {
+  width: 100vw;
+  text-align: center;
+  background-image: url("/Assets/img/bg-footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pre-footer .container-full {
+  width: 100%;
+  padding: 120px;
+  background-color: rgba(0, 0, 0, 0.503);
+  color: white;
+}
+.pre-footer .container-full h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #FBD300;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  padding: 60px 0;
+  gap: 30px;
+}
+footer .logo {
+  font-size: 30px;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+footer ul li i {
+  font-size: 20px;
+}
+footer p {
+  color: #282C2C;
 }
 
 /*# sourceMappingURL=styles.css.map */
